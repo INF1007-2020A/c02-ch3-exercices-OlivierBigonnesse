@@ -1,0 +1,8 @@
+test_average (__main__.TestExercice) ... ok
+test_bills (__main__.TestExercice) ... ok
+test_orthogonal (__main__.TestExercice) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+OK

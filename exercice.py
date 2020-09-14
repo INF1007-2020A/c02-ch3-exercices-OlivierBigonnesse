@@ -25,13 +25,13 @@ def average(values):
 	for v in values:
 		if v >= 0:
 			sum += v
-			++num_values
+			num_values += 1
 
 	return sum / num_values
 
 def bills(value):
 	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
-	twenties, tens, fives, ones = 0
+	twenties = tens = fives = ones = 0
 	while value != 0:
 		if value >= 20:
 			twenties = value // 20
