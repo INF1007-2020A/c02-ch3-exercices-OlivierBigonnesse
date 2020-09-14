@@ -3,12 +3,21 @@
 
 def dissipated_power(voltage, resistance):
 	# TODO: Calculer la puissance dissipée par la résistance.
-	return 0
+	power = voltage ** 2 / resistance
+	return power
 
 def orthogonal(v1, v2):
 	# TODO: Retourner vrai si les vecteurs sont orthogonaux, faux sinon.
 	v1[0] # Pour accéder au X
 	v1[1] # Pour accéder au Y
+
+	# Calculer le produit scalaire
+	# Vérifier si = 0
+	# Retourner Vrai si = 0, faux sinon
+	if v1[0] * v2[0] == 0 and v1[1] * v2[1] == 0:
+		orthogonal = true
+	else:
+		orthogonal = false
 	pass
 
 def average(values):
