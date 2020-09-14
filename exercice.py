@@ -12,13 +12,10 @@ def orthogonal(v1, v2):
 	v1[1] # Pour accéder au Y
 
 	# Calculer le produit scalaire
+	dot_product = v1[0] * v2[0] + v1[1] * v2[1]
 	# Vérifier si = 0
 	# Retourner Vrai si = 0, faux sinon
-	if v1[0] * v2[0] == 0 and v1[1] * v2[1] == 0:
-		orthogonal = true
-	else:
-		orthogonal = false
-	pass
+	return dot_product == 0
 
 def average(values):
 	# TODO: Calculer la moyenne des valeurs positives (on ignore les valeurs strictement négatives).
